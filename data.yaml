@@ -1,0 +1,25 @@
+# Flash Detection Dataset
+path: /content/drive/My Drive/Flash Detection Project/Dataset
+train: images/train
+val: images/val
+test: 
+
+# Class names
+names:
+  0: flash
+
+# Augmentation settings
+augment: True  # Enable augmentations
+augmentation:
+  hsv_h: 0.015  # Hue variation (+/- 1.5%)
+  hsv_s: 0.7    # Saturation variation (+/- 70%)
+  hsv_v: 0.4    # Value (brightness) variation (+/- 40%)
+  degrees: 10    # Rotation (+/- 10 degrees)
+  translate: 0.1 # Translation (+/- 10% of image size)
+  scale: 0.5     # Scale variation (50-150%)
+  shear: 0.0     # Shear disabled
+  perspective: 0.0005  # Perspective distortion
+  flipud: 0.0    # Vertical flip disabled
+  fliplr: 0.5    # Horizontal flip (50% chance)
+  mosaic: 1.0    # Mosaic augmentation probability (100%)
+  mixup: 0.1     # Mixup augmentation probability (10%)
